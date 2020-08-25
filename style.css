@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    height: 500px;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-container .right {
+    background: #f1eded;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 10px 20px 30px #ccc;
+}
+
+.right h2 {
+    font-weight: 600;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.right ul {
+    list-style-type: none;
+}
+
+.right ul li  {
+    margin: 15px 50px;
+    text-align: justify;
+}
+
+.right ul li::before {
+    content: '✓';
+    padding: 10px;
+    color: #1511ff;
+}
+
+.right button {
+    padding: 20px 80px;
+    margin: 30px 60px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background: linear-gradient(#fd9e56,#fa9458,#f4845d,#ec6e64);
+}
+
+.inner-container .left {
+    background: #f1eded;
+    width: 100%;
+    margin-left: 10px;
+    box-shadow: 10px 20px 30px #ccc;
+}
+
+.left .upper {
+    min-height: 250px;
+    background: linear-gradient(#fd9e56,#fa9458,#f4845d,#ec6e64);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.left .upper h2 {
+    padding: 20px;
+    font-weight: 600;
+}
+
+.left .upper .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left .upper div h4 {
+    margin: 10px 0px;
+    font-weight: 300;
+}
+
+.left .lower {
+    text-align: center;
+}
+
+.left .lower h4 {
+    margin: 20px 0px;
+}
+
+.left .lower p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 20px 0px;
+}
+
+.left .lower span {
+    color: #f4845d;
+}
+
+@media (max-width: 1000px) {
+    .inner-container {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .inner-container .left {
+        margin: 20px 0px;
+    }
+    .container {
+        max-width: 800px;
+        height: 500px;
+    }
+    .left .lower p {
+        padding: 20px;
+    }
+}
+
